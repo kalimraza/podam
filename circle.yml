@@ -1,4 +1,3 @@
 test:
  post:
-   - mkdir -p $CIRCLE_TEST_REPORTS/
    - find . -type f -regex ".*/target/surefire-reports/.*" -exec cp {} $CIRCLE_TEST_REPORTS/ \;
